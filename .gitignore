@@ -127,7 +127,8 @@ packages/strapi-generate-new/files/public/
 
 .dev
 .vscode
-# *.cache
+*.cache
+.strapi-updater.json
 
 ############################
 # Visual Studio Code
