@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stories",
+  "info": {
+    "name": "story"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "victimFirstName": {
+      "type": "string",
+      "required": true
+    },
+    "victimLastName": {
+      "type": "string",
+      "required": true
+    },
+    "occupation": {
+      "type": "string",
+      "required": true
+    },
+    "age": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "authorFirstName": {
+      "type": "string",
+      "required": true
+    },
+    "authorLastName": {
+      "type": "string",
+      "required": true
+    },
+    "authorEmail": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
