@@ -13,7 +13,7 @@
   "pluginOptions": {},
   "attributes": {
     "victims": {
-      "type": "string"
+      "type": "biginteger"
     }
   }
 }
