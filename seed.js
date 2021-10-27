@@ -7,6 +7,7 @@ const entry = () => ({
   "victimLastName": faker.name.lastName(),
   "occupation": faker.name.jobTitle(),
   "age": (Math.floor(Math.random() * 70) + 18).toString(),
+  "image":  faker.image.people() + '.jpg',
   "content": faker.lorem.paragraphs(),
   "authorFirstName": faker.name.firstName(),
   "authorLastName": faker.name.lastName(),
