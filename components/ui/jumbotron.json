@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_ui_jumbotron",
+  "info": {
+    "name": "Jumbotron",
+    "icon": "angry",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.button"
+    }
+  }
+}
