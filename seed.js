@@ -11,7 +11,9 @@ const entry = () => ({
   "content": faker.lorem.paragraphs(),
   "authorFirstName": faker.name.firstName(),
   "authorLastName": faker.name.lastName(),
-  "authorEmail": faker.internet.email()
+  "authorEmail": faker.internet.email(),
+  "county": faker.address.county(),
+  "city": faker.address.state()
 });
 const jsonString = JSON.stringify([...Array(COUNT).keys()].map(()=>entry()));
 
