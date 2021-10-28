@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_ui_jumbotron_with_victims",
+  "info": {
+    "name": "Jumbotron with victims",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "victimsCount": {
+      "model": "store"
+    },
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ui.button"
+    }
+  }
+}
