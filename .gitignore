@@ -139,3 +139,5 @@ front-workspace.code-workspace
 public/uploads/
 
 import.json
+
+.env
