@@ -136,7 +136,12 @@ packages/strapi-generate-new/files/public/
 
 front-workspace.code-workspace
 
+<<<<<<< HEAD
 ############################
 # Generated data dump file
 ############################
+=======
+public/uploads/
+
+>>>>>>> 409c6158a54b3257e85ad5089cb61c5a51b47631
 import.json

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_ui_buttons",
+  "info": {
+    "name": "button",
+    "icon": "arrow-circle-right"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    }
+  }
+}
