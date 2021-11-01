@@ -19,6 +19,6 @@ module.exports = {
   //
   // }
   '0 * * * *': () => {
-    strapi.config.functions['loadData']();
+    strapi.config.functions.loadData();
   },
 };
