@@ -141,3 +141,5 @@ public/uploads/
 import.json
 
 .env
+
+test-results/

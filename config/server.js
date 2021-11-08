@@ -7,6 +7,7 @@ module.exports = ({ env }) => ({
     },
   },
   cron: {
-    enabled: true
-  }
+    enabled: true,
+  },
+  recaptchaSecret: env('RECAPTCHA_SECRET_KEY', 'put_your_secret_key_here'),
 });
