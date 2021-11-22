@@ -9,7 +9,9 @@
     "increments": true,
     "timestamps": false,
     "draftAndPublish": true,
-    "privateAttributes": ["published_at"]
+    "privateAttributes": [
+      "published_at"
+    ]
   },
   "pluginOptions": {},
   "attributes": {
@@ -31,7 +33,9 @@
     "image": {
       "model": "file",
       "via": "related",
-      "allowedTypes": ["images"],
+      "allowedTypes": [
+        "images"
+      ],
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
@@ -62,6 +66,15 @@
     },
     "city": {
       "type": "string",
+      "required": true
+    },
+    "authorRelation": {
+      "type": "string",
+      "required": true
+    },
+    "hasLastNamePrivate": {
+      "type": "boolean",
+      "default": false,
       "required": true
     }
   }
