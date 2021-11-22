@@ -90,14 +90,8 @@ it('should create story if data and recaptcha are valid', async (done) => {
           expect(data.text).toBe(
             JSON.stringify([
               {
+                ...omit(expectedResponse, ['victimLastName']),
                 id: 1,
-                ...omit(requestBody, [
-                  'authorFirstName',
-                  'authorLastName',
-                  'authorEmail',
-                  'hasLastNamePrivate',
-                  'victimLastName',
-                ]),
               },
               expectedResponse,
             ])
@@ -111,7 +105,7 @@ it('should throw error when try to create story with no data', async (done) => {
   const expectedResponse = storyFactory.badRequest(
     {
       victimFirstName: ['victimFirstName must be defined.'],
-      // victimLastName: ['victimLastName must be defined.'],
+      victimLastName: ['victimLastName must be defined.'],
       occupation: ['occupation must be defined.'],
       content: ['content must be defined.'],
       authorFirstName: ['authorFirstName must be defined.'],
