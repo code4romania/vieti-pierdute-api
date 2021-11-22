@@ -55,11 +55,6 @@
       ".cache"
     ],
     "testEnvironment": "node",
-    "testRunner": "jest-jasmine2",
-    "reporters": [
-      "default",
-      "jest-junit"
-    ],
-    "testResultsProcessor": "jest-junit"
+    "testRunner": "jest-jasmine2"
   }
 }

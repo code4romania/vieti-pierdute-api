@@ -31,6 +31,19 @@ it('should find stories', async (done) => {
     });
 });
 
+it('should not return lastName if hasLastNamePrivate is true', async (done) => {
+  await storyFactory.createStory({
+    hasLastNamePrivate: true,
+  });
+  await request(strapi.server)
+    .get('/stories')
+    .expect(200)
+    .then((data) => {
+      expect(data.text).toBe('[]');
+      done();
+    });
+});
+
 it('should create story if data and recaptcha are valid', async (done) => {
   const requestBody = storyFactory.mockStoryData();
   const expectedResponse = sanitizeEntity(
@@ -119,7 +132,7 @@ it('should throw error if captcha code has expired', async (done) => {
     });
 });
 
-it('should throw error if google link doesn\'t work', async (done) => {
+it("should throw error if google link doesn't work", async (done) => {
   const requestBody = storyFactory.mockStoryData();
   const expectedResponse = storyFactory.badRequest({
     recaptcha: [
