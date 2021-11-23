@@ -4,6 +4,7 @@
 const defaultData = {
   victimFirstName: 'Tressa',
   victimLastName: 'Stefan',
+  hasLastNamePrivate: false,
   occupation: 'Senior Paradigm Coordinator',
   age: '43',
   content:
@@ -23,8 +24,10 @@ const defaultData = {
   authorFirstName: 'Carmine',
   authorLastName: 'Stoica',
   authorEmail: 'Marjolaine66@gmail.com',
+  authorRelation: 'Brother',
   county: 'Neamt',
   city: 'Bihor',
+  image: null,
 };
 
 /**
@@ -52,10 +55,10 @@ const createStory = async (strapi, data) => {
   });
 };
 
-const badRequest = (errors) => ({
+const badRequest = (errors, message) => ({
   statusCode: 400,
   error: 'Bad Request',
-  message: 'FailedCaptchaScore',
+  message: message,
   data: {
     errors,
   },

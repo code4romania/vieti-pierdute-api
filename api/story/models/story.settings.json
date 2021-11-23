@@ -19,7 +19,13 @@
     },
     "victimLastName": {
       "type": "string",
-      "required": true
+      "required": false
+    },
+    "hasLastNamePrivate": {
+      "type": "boolean",
+      "default": false,
+      "required": true,
+      "private": true
     },
     "occupation": {
       "type": "string",
@@ -55,6 +61,10 @@
       "required": true,
       "private": true,
       "regex": "^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})$"
+    },
+    "authorRelation": {
+      "type": "string",
+      "required": true
     },
     "county": {
       "type": "string",
