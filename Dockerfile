@@ -10,8 +10,8 @@ COPY . .
 
 ENV NODE_ENV production
 
-RUN npm build
+RUN npm run build --cache
 
 EXPOSE 1337
 
-CMD ["npm", "start"]
+CMD ["npm", "run start"]
