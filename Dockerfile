@@ -1,4 +1,4 @@
-FROM strapi/base
+FROM strapi/base:14-alpine
 
 WORKDIR /
 
