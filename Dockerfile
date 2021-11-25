@@ -9,7 +9,7 @@ RUN npm install
 COPY . .
 
 ENV NODE_ENV production
-ENV DATABASE_URL "postgres-db"
+ENV DATABASE_URL postgres-db
 
 RUN npm run build --cache
 
