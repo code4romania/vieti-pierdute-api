@@ -8,8 +8,8 @@ RUN npm install
 
 COPY . .
 
-ENV NODE_ENV production
-ENV DATABASE_URL postgresdb
+ENV NODE_ENV=production
+ENV DATABASE_URL=postgresdb
 
 RUN npm run build
 
