@@ -3,7 +3,6 @@ FROM strapi/base
 WORKDIR /
 
 COPY ./package.json ./
-COPY ./packages-lock.json ./
 
 RUN npm install
 
