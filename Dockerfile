@@ -11,7 +11,7 @@ COPY . .
 ENV NODE_ENV production
 ENV DATABASE_URL postgres-db
 
-RUN npm run build --cache
+RUN ["npm run build --cache"]
 
 EXPOSE 1337
 
