@@ -73,6 +73,16 @@
     "city": {
       "type": "string",
       "required": true
+    },
+    "isExternal": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "externalLink": {
+      "type": "string",
+      "default": "",
+      "required": false
     }
   }
 }

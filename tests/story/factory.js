@@ -28,6 +28,8 @@ const defaultData = {
   county: 'Neamt',
   city: 'Bihor',
   image: null,
+  isExternal: false,
+  externalLink: '',
 };
 
 /**
