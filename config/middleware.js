@@ -1,7 +1,7 @@
 module.exports = ({ env }) => ({
   settings: {
     cache: {
-      enabled: true,
+      enabled: false,
       populateContext: true,
       clearRelatedCache: true,
       models: ['banners', 'pages', 'stories']
