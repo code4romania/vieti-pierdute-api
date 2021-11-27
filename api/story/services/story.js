@@ -20,7 +20,9 @@ module.exports = {
         { isDraft: isDraft(data, storyModel) }
       );
 
-    const entry = await strapi.query('story').create(validData);
+    const entry = await strapi
+      .query('story')
+      .create({ ...validData, published_at: null });
 
     if (files) {
       await strapi.entityService.uploadFiles(entry, files, {
