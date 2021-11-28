@@ -1,8 +1,8 @@
 {
   "name": "vieti-pierdute-api",
   "private": true,
-  "version": "0.1.0",
-  "description": "A Strapi application",
+  "version": "0.1.1",
+  "description": "This platform is our way to send condolences to those who lost a loved one because of Covid-19 and to invite Romania to have an exercise of collective mourning in which for a few minutes we can be all together.",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -29,7 +29,7 @@
     "strapi-utils": "3.6.8"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Code for Romania / https://github.com/code4romania/vieti-pierdute-api/graphs/contributors"
   },
   "strapi": {
     "uuid": "4b70e062-227a-4c44-b865-9cd45198c254"

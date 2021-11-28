@@ -1,14 +1,12 @@
-# Project name
+# Vieți pierdute
 
 [![GitHub contributors][ico-contributors]][link-contributors]
 [![GitHub last commit][ico-last-commit]][link-last-commit]
 [![License: MPL 2.0][ico-license]][link-license]
 
-Insert bullets description of the project if available.
-
 [See the project live][link-production]
 
-Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project.
+This platform is our way to send condolences to those who lost a loved one because of Covid-19 and to invite Romania to have an exercise of collective mourning in which for a few minutes we can be all together.
 
 [Contributing](#contributing) | [Built with](#built-with) | [Repos and projects](#repos-and-projects) | [Deployment](#deployment) | [Feedback](#feedback) | [License](#license) | [About Code for Romania](#about-code-for-romania)
 
@@ -21,30 +19,37 @@ Help us out by testing this project in the [staging environment][link-staging]. 
 If you would like to suggest new functionality, open an Issue and mark it as a __[Feature request]__. Please be specific about why you think this functionality will be of use. If you can, please include some visual description of what you would like the UI to look like, if you are suggesting new UI elements.
 
 ## Built With
+Strapi
 
 ### Programming languages
-
-### Platforms
-
-### Frontend framework
+Javascript
 
 ### Package managers
+Yarn
 
 ### Database technology & provider
+Postgress
 
 ## Repos and projects
-
-Mention all related repos and projects.
+Client application available [here](https://github.com/code4romania/vieti-pierdute-client).
 
 ## Deployment
+Dockerfile on k8 <3
 
 Guide users through getting your code up and running on their own system. In this section you can talk about:
 1. Installation process
-2. Software dependencies
-3. Latest releases
-4. API references
+Make sure you have [nvm](https://github.com/nvm-sh/nvm) for right node version. Make your own `.env` file.
 
-Describe and show how to build your code and run the tests.
+```
+$ npm i -g yarn
+$ yarn install
+$ yarn build
+$ yarn start
+
+$ yarn build --cache
+```
+2. Software dependencies
+Node & Yarn
 
 ## Feedback
 
@@ -73,8 +78,8 @@ Last, but not least, we rely on donations to ensure the infrastructure, logistic
 [link-license]: https://opensource.org/licenses/MPL-2.0
 [link-contributing]: https://github.com/code4romania/.github/blob/main/CONTRIBUTING.md
 
-[link-production]: insert_link_here
-[link-staging]: insert_link_here
+[link-production]: http://vietipierdute.ro/
+[link-staging]: https://vieti-pierdute.vercel.app/
 
 [link-code4]: https://www.code4.ro/en/
 [link-donate]: https://code4.ro/en/donate/
