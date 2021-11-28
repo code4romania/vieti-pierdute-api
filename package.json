@@ -1,6 +1,5 @@
 {
   "name": "vieti-pierdute-api",
-  "private": true,
   "version": "0.1.1",
   "description": "This platform is our way to send condolences to those who lost a loved one because of Covid-19 and to invite Romania to have an exercise of collective mourning in which for a few minutes we can be all together.",
   "scripts": {
