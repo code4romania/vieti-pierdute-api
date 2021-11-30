@@ -53,4 +53,16 @@ module.exports = {
       return story;
     });
   },
+
+  async findOne(params) {
+    const story = await strapi
+      .query('story')
+      .findOne(params);
+
+    if (story.hasLastNamePrivate) {
+      return omit(story, 'victimLastName');
+    }
+
+    return story;
+  },
 };
