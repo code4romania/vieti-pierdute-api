@@ -39,11 +39,30 @@ module.exports = {
       .query('story')
       .find(params, populate);
 
-    return results.map((story) => {
+    return results.filter((story) => {
+      if (!story.published_at) {
+        return false;
+      }
+
+      return true;
+    }).map((story) => {
       if (story.hasLastNamePrivate) {
         return omit(story, 'victimLastName');
       }
+
       return story;
     });
+  },
+
+  async findOne(params) {
+    const story = await strapi
+      .query('story')
+      .findOne(params);
+
+    if (story.hasLastNamePrivate) {
+      return omit(story, 'victimLastName');
+    }
+
+    return story;
   },
 };
