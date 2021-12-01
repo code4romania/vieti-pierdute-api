@@ -1,6 +1,6 @@
 'use strict';
 const { isDraft } = require('strapi-utils').contentTypes;
-const { omit, set } = require('lodash');
+const { set } = require('lodash');
 /**
  * Read the documentation (https://strapi.io/documentation/developer-docs/latest/development/backend-customization.html#core-services)
  * to customize this service
@@ -32,37 +32,5 @@ module.exports = {
     }
 
     return entry;
-  },
-
-  async find(params, populate) {
-    const results = await strapi
-      .query('story')
-      .find(params, populate);
-
-    return results.filter((story) => {
-      if (!story.published_at) {
-        return false;
-      }
-
-      return true;
-    }).map((story) => {
-      if (story.hasLastNamePrivate) {
-        return omit(story, 'victimLastName');
-      }
-
-      return story;
-    });
-  },
-
-  async findOne(params) {
-    const story = await strapi
-      .query('story')
-      .findOne(params);
-
-    if (story.hasLastNamePrivate) {
-      return omit(story, 'victimLastName');
-    }
-
-    return story;
   },
 };
